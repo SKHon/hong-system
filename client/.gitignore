@@ -70,7 +70,6 @@ typings/
 
 #   编译输出文件
 dist
-package-lock.json
 sql.txt
 init.sql
 
