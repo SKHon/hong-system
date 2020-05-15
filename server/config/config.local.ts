@@ -1,6 +1,13 @@
 import { EggAppConfig, PowerPartial } from 'egg';
 
-export default () => {
-  const config: PowerPartial<EggAppConfig> = {};
+export default appInfo => {
+  console.log(appInfo);
+  const config: PowerPartial<EggAppConfig> = {
+    person: { name: 'ljh' }
+  };
   return config;
 };
+
+export const logger = {
+  dir: '../logs/my-new.log'
+}
